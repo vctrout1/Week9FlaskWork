@@ -1,28 +1,41 @@
 
 {% extends "layout2.html" %}
 {% block content %}
-<h3>Welcome {{user}} </h3>
 
-<ul>
-    {% for user in users %}
-        <li>{{ user }}</li>
-    {% endfor %}
-</ul>
+<!--<h3>Welcome. Today is {{ weather }} </h3>-->
+<!--{% if weather=="storms" %}-->
+<!--<h3> Take yor umbrella!</h3>h3>-->
+<!--{% else %}-->
+<!--<h3>Have a nice day!</h3>-->
+<!--{% endif %}-->
 
-<ol>
-    {% for user in users %}
-        <li>{{ user }}</li>
-    {% endfor %}
-</ol>
+<div class= row>
+{% for user in users %}
+    <div class="col s12 m6 l2" style="background-color:green;color:white"><p>{{user}}</p>
+    </div>
+{% endfor %}
+</div>
 
-<table>
-    <thead>
-    <td>Name</td>
-    </thead>
-    {% for user in users %}
-    <tr><td>{{user}}</td></tr>
-    {% endfor %}
-</table>
+<!--<ul>-->
+    <!--{% for user in users %}-->
+        <!--<li>{{ user }}</li>-->
+    <!--{% endfor %}-->
+<!--</ul>-->
 
-{%endblock %}
+<!--<ol>-->
+    <!--{% for user in users %}-->
+        <!--<li>{{ user }}</li>-->
+    <!--{% endfor %}-->
+<!--</ol>-->
+
+<!--<table>-->
+    <!--<thead>-->
+    <!--<td>Name</td>-->
+    <!--</thead>-->
+    <!--{% for user in users %}-->
+    <!--<tr><td>{{user}}</td></tr>-->
+    <!--{% endfor %}-->
+<!--</table>-->
+
+{% endblock %}
 
