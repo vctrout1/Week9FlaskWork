@@ -1,0 +1,28 @@
+
+{% extends "layout2.html" %}
+{% block content %}
+<h3>Welcome {{user}} </h3>
+
+<ul>
+    {% for user in users %}
+        <li>{{ user }}</li>
+    {% endfor %}
+</ul>
+
+<ol>
+    {% for user in users %}
+        <li>{{ user }}</li>
+    {% endfor %}
+</ol>
+
+<table>
+    <thead>
+    <td>Name</td>
+    </thead>
+    {% for user in users %}
+    <tr><td>{{user}}</td></tr>
+    {% endfor %}
+</table>
+
+{%endblock %}
+
